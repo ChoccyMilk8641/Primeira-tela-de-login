@@ -68,17 +68,6 @@ body {
   animation: slideIn 1.4s ease-out forwards;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-300px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 
 .container {
   max-width: 550px;
@@ -90,6 +79,18 @@ body {
   justify-content: center;
   height: 70vh;
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 .card {
   background-color: rgba(240, 248, 252, 0.92);
@@ -117,6 +118,7 @@ body {
 
 .card:hover {
   transform: translateY(-2px);
+  box-shadow: 10px 4px 6px rgba(0, 0, 133, 0.174);
 }
 
 
@@ -136,25 +138,21 @@ flex: 1;
   flex-direction: column;
 }
 
-.email {
+
+.inputsint {
   width: 100%;
   padding: 6px 10px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: whitesmoke;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.password {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.inputsint:active {
+  border: #016bff;
 }
+
 .login {
     padding:5px 20px; 
     margin: 8px 60px;
@@ -171,4 +169,17 @@ flex: 1;
 .login:hover {
   padding: 7px 20px;
   transition: 0.5s;
+}
+
+.links {
+  color: #016bff;
+}
+
+.novoaqui {
+  color: #64748b;
+}
+
+
+#my{
+zoom: 100%;
 }
